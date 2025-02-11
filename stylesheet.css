@@ -1,0 +1,31 @@
+body{
+    /* text-align: center; */
+    /* /background-image: url('../backgrnd.jpeg'); */
+    /* background-repeat: no-repeat; */
+    background-color:#FFB347;
+}
+#header-section{
+    padding: 10px;
+
+}
+#header-section h1{
+    font-family: cursive;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+
+}
+#btn{
+    padding: 5px;
+    font-size: 15px;
+    width: 15%;
+    background-color: #A1C3FF;
+    border-radius: 5px;
+}

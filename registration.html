@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration</title>
+    <link rel="stylesheet" href="../routes/css/stylesheet.css">
+</head>
+<body>
+    <style>
+        #address{
+            width: 30%;
+        }
+        #imagepart{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        #role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        #role select{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+    </style>
+    <div id="header-section">
+    <h1>ONLINE VOTING SYSTEM</h1>
+    <hr>
+    </div>
+    <h3>REGISTRATION</h3>
+    <form action="../API/register.php" method="POST" enctype="multipart/form-data">
+       <input type="text" name="name" placeholder="Enter Your Name">
+       <input type="number" name="mobile" placeholder="Enter Mobile"><br><br>
+       <input type="password" name="password" placeholder="Password">
+       <input type="password" name="CPassword" placeholder="CPassword"><br><br>
+       <input id="address" type="text" name="Address" placeholder="Address"><br><br>
+       <center>
+       <div id="imagepart">
+       Upload Image:<input type="file" name="Photo" placeholder="">
+       </div><br>
+  
+    <div id="role">
+        Select Your Role:<select name="role">
+        <option value="1">Voter</option>
+        <option value="2">Group</option>
+       </select>
+    </div><br><br>
+</center>
+       <button style="padding: 5px;
+       font-size: 15px;
+       width: 15%;
+       background-color: #A1C3FF;
+       border-radius: 5px;">Register</button><br><br>
+       Already User?<a href="../index.html">Login Here</a>
+    </form>
+</body>
+</html>
